@@ -11,6 +11,24 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+// NAVBAR SCROLL EFFECT
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 100) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+// MOBILE MENU TOGGLE
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
 
 // BACK TO TOP BUTTON
 const backToTop = document.getElementById("backToTop");
@@ -104,3 +122,4 @@ toggleFotoBtn.addEventListener('click', () => {
   fotoExpanded = !fotoExpanded;
   toggleFotoBtn.textContent = fotoExpanded ? 'Tutup Foto' : 'Lihat Semua Foto';
 });
+
