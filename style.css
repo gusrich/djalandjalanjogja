@@ -93,6 +93,49 @@ body {
     margin: 5px 0;
   }
 }
+/* ===== HAMBURGER (Mobile) ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Menu Style */
+@media (max-width: 768px) {
+  #navbar .container {
+    justify-content: space-between;
+    padding: 12px 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: rgba(19, 81, 56,.97);
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 25px;
+    transition: 0.3s;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
   height: 100vh;
@@ -803,3 +846,4 @@ footer p {
   color: #fff;
   text-decoration: underline;
 }
+
