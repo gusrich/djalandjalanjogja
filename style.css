@@ -106,6 +106,33 @@ body {
 .nav-links a:hover {
   color: #ffdd57; /* warna aksen hover */
 }
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  #navbar .container {
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
+
 
 
 /* ===== HERO SECTION ===== */
@@ -817,4 +844,5 @@ footer p {
 .developer-credit a:hover {
   color: #fff;
   text-decoration: underline;
+
 }
