@@ -769,6 +769,44 @@ footer .credit a:hover {
   transform: scale(1.1);
   opacity: 1;
 }
+/* ===== FLOATING SOCIAL LEFT (FB & TIKTOK) ===== */
+.float-social {
+  position: fixed;
+  left: 25px; /* sejajar dengan logo backToTop */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.92;
+}
+
+.float-social img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Posisi bertingkat di atas logo backToTop */
+.fb-float {
+  bottom: 90px;  /* 25px + 55px (tinggi logo) + 10px jarak */
+}
+
+.tiktok-float {
+  bottom: 150px; /* naik lagi 60px dari FB */
+}
+
+/* Hover effect */
+.float-social:hover {
+  transform: scale(1.12);
+  opacity: 1;
+}
+
+
 
 /* === HERO SECTION CUSTOM BG + OVERLAY === */
 #hero {
@@ -932,6 +970,7 @@ footer p {
 .wa-second {
   bottom: 70px;
 }
+
 
 
 
