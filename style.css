@@ -680,7 +680,7 @@ footer {
   padding: 20px 0;
 }
 footer .credit {
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   color: #d5d5d5;
   margin-top: 5px;
 }
@@ -688,7 +688,7 @@ footer .credit {
 footer .credit a {
   color: #ffd700; /* emas lembut, biar kelihatan eksklusif */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
@@ -930,6 +930,7 @@ footer p {
 .wa-second {
   bottom: 70px;
 }
+
 
 
 
