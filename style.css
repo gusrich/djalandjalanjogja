@@ -879,5 +879,33 @@ footer p {
     display: inline-block;
   }
 }
+/* ===== FLOATING WA BUTTONS ===== */
+.wa-float {
+  position: fixed;
+  right: 18px;
+  background: #25d366;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.wa-float:hover {
+  transform: scale(1.07);
+}
+
+.wa-main {
+  bottom: 20px;
+}
+
+.wa-second {
+  bottom: 70px;
+}
+
 
 
